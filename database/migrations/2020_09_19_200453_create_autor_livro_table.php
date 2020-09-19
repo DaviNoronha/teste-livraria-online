@@ -19,7 +19,6 @@ class CreateAutorLivroTable extends Migration
 
             $table->foreign('autor_id')->references('id')->on('autors');
             $table->foreign('livro_id')->references('id')->on('livros');
-            $table->timestamps();
         });
     }
 
